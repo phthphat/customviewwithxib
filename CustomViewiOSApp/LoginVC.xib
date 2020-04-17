@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginVC" customModule="CustomViewiOSApp" customModuleProvider="target">
+            <connections>
+                <outlet property="passwordView" destination="cAT-to-q8f" id="ahE-Gf-bbF"/>
+                <outlet property="usernameView" destination="oip-0u-GPf" id="nKx-lf-lqA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Go5-1d-DpU">
+                    <rect key="frame" x="41.5" y="168" width="331" height="0.0"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Phthphat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7LC-EU-osM">
+                            <rect key="frame" x="0.0" y="0.0" width="331" height="0.0"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oip-0u-GPf" customClass="TitleAndInput" customModule="CustomViewiOSApp" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="331" height="0.0"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cAT-to-q8f" customClass="TitleAndInput" customModule="CustomViewiOSApp" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="331" height="0.0"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vIC-Fn-8AI">
+                            <rect key="frame" x="0.0" y="0.0" width="331" height="0.0"/>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="onTapLogin:" destination="-1" eventType="touchUpInside" id="CJ1-vM-Apl"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="Go5-1d-DpU" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Bfj-db-cMg"/>
+                <constraint firstItem="Go5-1d-DpU" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="4/5" id="C23-MZ-Mid"/>
+                <constraint firstItem="Go5-1d-DpU" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="124" id="khS-ts-oCI"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="119"/>
+        </view>
+    </objects>
+</document>
